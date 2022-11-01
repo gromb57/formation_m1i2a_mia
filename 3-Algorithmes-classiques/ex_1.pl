@@ -1,5 +1,7 @@
-% 1.
+:-module(chap3ex1, [frontiere/2,depart/1,arrivee/1,deplacementCorrect/2,deplace/2]).
 :-use_module(library(lists)).
+
+% 1.
 
 frontiere([1,1], [1,2]).
 frontiere([3,1], [3,2]).
@@ -72,3 +74,4 @@ labyrinthe(Solution) :-
     depart(C),
     parcours([C], Sol),
     reverse(Sol,Solution).
+
